@@ -4,6 +4,7 @@
     <compilerSourcePath>
       <compilerSourcePathEntry kind="1" linkType="1" path="/Users/DAN/Desktop/PrimaryFeather-Starling-Framework-06a3103/starling/src"/>
       <compilerSourcePathEntry kind="1" linkType="1" path="/Users/DAN/Desktop/Hi-ReS-Stats-master/src"/>
+      <compilerSourcePathEntry kind="1" linkType="1" path="/Users/DAN/Desktop/GreenSock-AS3-master/src"/>
     </compilerSourcePath>
     <libraryPath defaultLinkType="0">
       <libraryPathEntry kind="4" path="">
