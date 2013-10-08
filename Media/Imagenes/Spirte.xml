@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:fd891b1279c53f27a81b88c15ba7c408:1/1$ -->
+<TextureAtlas imagePath="Sprite.png">
+    <SubTexture name="About button" x="2" y="259" width="163" height="151" frameX="-2" frameY="0" frameWidth="165" frameHeight="151"/>
+    <SubTexture name="Gum" x="167" y="259" width="291" height="251"/>
+    <SubTexture name="Gum0001" x="121" y="2" width="117" height="100" frameX="-1" frameY="-1" frameWidth="121" frameHeight="112"/>
+    <SubTexture name="Gum0002" x="835" y="2" width="117" height="102" frameX="-1" frameY="-6" frameWidth="121" frameHeight="112"/>
+    <SubTexture name="Gum0003" x="121" y="106" width="117" height="102" frameX="-1" frameY="-6" frameWidth="121" frameHeight="112"/>
+    <SubTexture name="Gum0004" x="2" y="106" width="117" height="102" frameX="-1" frameY="-6" frameWidth="121" frameHeight="112"/>
+    <SubTexture name="Gum0005" x="240" y="106" width="117" height="102" frameX="-1" frameY="-6" frameWidth="121" frameHeight="112"/>
+    <SubTexture name="Gum0006" x="716" y="2" width="117" height="102" frameX="-1" frameY="-6" frameWidth="121" frameHeight="112"/>
+    <SubTexture name="Gum0007" x="359" y="106" width="117" height="104" frameX="-1" frameY="-5" frameWidth="121" frameHeight="112"/>
+    <SubTexture name="Gum0008" x="478" y="106" width="117" height="104" frameX="-1" frameY="-5" frameWidth="121" frameHeight="112"/>
+    <SubTexture name="Gum0009" x="597" y="2" width="117" height="102" frameX="-1" frameY="-6" frameWidth="121" frameHeight="112"/>
+    <SubTexture name="Gum0010" x="240" y="2" width="117" height="102" frameX="-1" frameY="-6" frameWidth="121" frameHeight="112"/>
+    <SubTexture name="Gum0011" x="359" y="2" width="117" height="102" frameX="-1" frameY="-6" frameWidth="121" frameHeight="112"/>
+    <SubTexture name="Gum0012" x="478" y="2" width="117" height="102" frameX="-1" frameY="-6" frameWidth="121" frameHeight="112"/>
+    <SubTexture name="Gum0013" x="2" y="2" width="117" height="100" frameX="-1" frameY="-7" frameWidth="121" frameHeight="112"/>
+    <SubTexture name="Gum0014" x="2" y="2" width="117" height="100" frameX="-1" frameY="-7" frameWidth="121" frameHeight="112"/>
+    <SubTexture name="Play button" x="597" y="106" width="157" height="151"/>
+    <SubTexture name="Scores Button" x="756" y="106" width="163" height="151"/>
+    <SubTexture name="Sprite" x="460" y="259" width="474" height="414" frameX="-2" frameY="-2" frameWidth="512" frameHeight="512"/>
+</TextureAtlas>

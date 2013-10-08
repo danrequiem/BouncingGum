@@ -1,5 +1,7 @@
 package pantallas
 {
+	import Events.EventoDeNavegacion;
+	
 	import com.greensock.TweenLite;
 	
 	import starling.display.Button;
@@ -34,35 +36,47 @@ package pantallas
 			bg.height = 800;
 			this.addChild(bg);
 			
-			gum = new Image(Recursos.ObtTexture("Gum"));
+			gum = new Image(Recursos.ObtAtlas().getTexture("Gum"));
 			gum.width = 150;
 			gum.height = 150;
 			gum.x= 230;
 			gum.y= 60;
 			this.addChild(gum);
 	
-			play = new Button(Recursos.ObtTexture("PlayButton"));
+			play = new Button(Recursos.ObtAtlas().getTexture("Play button"));
 			play.width = 100;
 			play.height = 100;
 			play.x= 100;
 			play.y= 600;
 			this.addChild(play);
 			
-			about = new Button(Recursos.ObtTexture("AboutButton"));
+			about = new Button(Recursos.ObtAtlas().getTexture("About button"));
 			about.width = 100;
 			about.height = 100;
 			about.x= 410;
 			about.y= 600;
 			this.addChild(about);
 
-			scores = new Button(Recursos.ObtTexture("ScoresButton"));
+			scores = new Button(Recursos.ObtAtlas().getTexture("Scores Button"));
 			scores.width = 100;
 			scores.height = 100;
 			scores.x= 260;
 			scores.y= 650;
 			this.addChild(scores);
 			
+			this.addEventListener(Event.TRIGGERED, menuClick);
+			
 
+		}
+		
+		private function menuClick(event:Event):void
+		{
+			var botonClick:Button = event.target as Button;
+			
+			if((botonClick as Button) == play)
+			{
+				this.dispatchEvent(new EventoDeNavegacion(EventoDeNavegacion.cambiarPantalla,{id:"play"}, true));
+			}
 		}
 		
 		public function Iniciar():void
@@ -83,6 +97,12 @@ package pantallas
 			
 			this.addEventListener(Event.ENTER_FRAME, Flotar);
 			
+		}
+		public function Esconder():void
+		{
+			this.visible = false
+			
+			if(this.hasEventListener(Event.ENTER_FRAME))this.removeEventListener(Event.ENTER_FRAME, Flotar);
 		}
 		
 		private function Flotar(event:Event):void

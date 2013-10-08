@@ -30,5 +30,15 @@
 			<type>2</type>
 			<location>/Users/DAN/Desktop/PrimaryFeather-Starling-Framework-06a3103/starling/src</location>
 		</link>
+		<link>
+			<name>bin-release1</name>
+			<type>2</type>
+			<location>/Users/DAN/Desktop</location>
+		</link>
+		<link>
+			<name>bin-release2</name>
+			<type>2</type>
+			<location>/Volumes/NO NAME/Entrega1</location>
+		</link>
 	</linkedResources>
 </projectDescription>

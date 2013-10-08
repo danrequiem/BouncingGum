@@ -5,25 +5,35 @@ package
 	import flash.utils.Dictionary;
 	
 	import starling.textures.Texture;
+	import starling.textures.TextureAtlas;
 
 	public class Recursos
 	{
-		[Embed(source="../Media/Imagenes/Gum.png")]
-		public static const Gum:Class;
-		
 		[Embed(source="../Media/Imagenes/title.png")]
 		public static const Title:Class;
 		
-		[Embed(source="../Media/Imagenes/About Button.png")]
-		public static const AboutButton:Class;
-		
-		[Embed(source="../Media/Imagenes/Play button.png")]
-		public static const PlayButton:Class;
-
-		[Embed(source="../Media/Imagenes/Scores Button.png")]
-		public static const ScoresButton:Class;
+		[Embed(source="../Media/Imagenes/Estrellas.jpg")]
+		public static const Fondo:Class;
 		
 		private static var texturas:Dictionary = new Dictionary();
+		private static var texturasAtlas:TextureAtlas;
+		
+		[Embed(source="../Media/Imagenes/Sprite.png")]
+		public static const atlasexturas:Class;
+		
+		[Embed(source="../Media/Imagenes/Spirte.xml", mimeType="application/octet-stream")]
+		public static const atlasXml:Class;
+		
+		public static function ObtAtlas():TextureAtlas
+		{
+			if(texturasAtlas == null)
+			{
+				var texture:starling.textures.Texture = ObtTexture("atlasexturas");
+				var xml:XML = XML(new atlasXml());
+				texturasAtlas = new TextureAtlas(texture, xml);
+			}
+			return texturasAtlas
+		}
 		
 		public static function ObtTexture(name:String):starling.textures.Texture
 		{
